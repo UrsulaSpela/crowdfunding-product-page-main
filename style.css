@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+body{
+    width: 100vw;
+    background: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home{
+    width: 1440px;
+    height: 2158px;
+}
+#head{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background: url(images/image-hero-desktop.jpg) no-repeat;
+    background-size: cover;
+    padding: 45px 165px 0 165px;
+}
+#logo{
+    background: url(images/logo.svg) no-repeat;
+    background-size: contain;
+    width: 125px;
+    height: 25px;
+}
+#head a{
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    font-size: 15px;
+}
+#head a:hover{
+    opacity: .8;
+}
+/* intro */
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -90px;
+}
+#intro, #stats, #about{
+    width: 730px;
+    background: white;
+    border-radius: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 25px;
+}
+#intro{
+    height: 265px;
+    text-align: center;
+    padding-top: 60px;
+}
+#stats{
+    height: 210px;
+}
+#about{
+    height: 1195px;
+}
