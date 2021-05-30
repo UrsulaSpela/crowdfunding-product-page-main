@@ -128,22 +128,56 @@ body{
     font-size: 1.25em;
     padding-bottom: 35px;
 }
-#about p{
+p{
     line-height: 30px;
     color: hsl(0, 0%, 60%);
     padding-bottom: 40px;
 }
 .pledge{
-    border: 1px solid hsl(0, 0%, 60%);
+    height: 245px;
+    border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
     margin-bottom: 25px;
-    padding: 40px 30px 30px 30px;
+    padding: 30px 30px 20px 30px;
 }
 .pledge h2{
     padding-bottom: 30px;
     font-size: 1.1em;
 }
+.pledge p{
+    padding-bottom: 20px;
+    line-height: 25px;
+}
 .top{
     display: flex;
     justify-content: space-between;
+}
+.price{
+    color: hsl(176, 50%, 47%);
+    font-size: 15px;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.nmbr-left{
+    display: flex;
+}
+.nmbr-left p{
+    padding: 10px;
+}
+.btn-reward{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: hsl(176, 50%, 47%);
+    color: white;
+}
+.out-of-stock{
+    opacity: .5;
+}
+.out-of-stock button{
+    background:hsl(0, 0%, 60%);
 }
