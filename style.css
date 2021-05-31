@@ -181,3 +181,112 @@ p{
 .out-of-stock button{
     background:hsl(0, 0%, 60%);
 }
+/* modal */
+#modal{
+    width: 730px;
+    height: 905px;
+    max-height: 1000px;
+    background: white;
+    padding: 45px;
+    border-radius: 10px;
+    position: relative;
+    top: -1900px;
+    display: none;
+}
+.modal-selected{
+    height: 1000px;
+}
+#modal h2{
+    font-size: 1.25em;
+    padding-bottom: 35px;
+}
+.pledge-select{
+    display: flex;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    height: 155px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+.pledge-select input{
+    width: 35px;
+    height: 35px;
+    margin-right: 25px;
+    color:hsl(176, 50%, 47%);
+}
+.select-item{
+    height: 250px;
+    border: 2px solid hsl(176, 50%, 47%);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.pledge-selected{
+    display: none;
+    justify-content: space-between;
+    padding: 0 25px 25px 25px;
+}
+input{
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid hsl(176, 50%, 47%);
+    padding-left: 30px;
+    font-weight: 700;
+    color: black;
+}
+.pledge-selected button{
+    width: 100px;
+    height: 45px;
+    background: hsl(176, 50%, 47%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+.select-top{
+    display: flex;
+    font-size: 16px;
+    height: 35px;
+}
+span{
+    position: relative;
+    left: 190px;
+}
+
+.select-top p{
+    color:hsl(176, 50%, 47%);
+    position: relative;
+    top: -5px;
+    left: 20px;
+    font-weight: 500;
+}
+#success{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 540px;
+    height: 450px;
+    background: white;
+    border-radius: 10px;
+    padding: 45px;
+    text-align: center;
+    position: relative;
+    top: -1700px;
+}
+#icon-success{
+    background: url(images/icon-check.svg) no-repeat;
+    width: 85px;
+    height: 85px;
+}
+
+#success button{
+    width: 105px;
+    height: 50px;
+    background: hsl(176, 50%, 47%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+#success h3{
+    margin-bottom: 20px;
+}
