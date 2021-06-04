@@ -1,28 +1,50 @@
-var slider = document.querySelector('#myRange');
-var monthlySwitch = document.querySelector("input[type=checkbox]");
-var valueViews = document.querySelector('#valueViews');
-var valuePrice = document.querySelector('#valuePrice');
-
-valueViews = ["10K", "50K", "100K", "500K", "1M"];
-valuePrice = ["$8", "$12", "$16", "$24", "$36"];
-
-slider.max = valueViews.length;
-document.querySelector("input[type=checkbox]").addEventListener("click", switchState);
-
-function switchState() {
-    if (monthlySwitch.checked === true) {
-        valuePrice = ["$6", "$9", "$12", "$18", "$27"];
+function showModal() {
+    var x = document.querySelector('#modal');
+    var main = document.querySelector('#main');
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      main.style.display = 'none';
     } else {
-        valuePrice = ["$8", "$12", "$16", "$24", "$36"];
+      x.style.display = 'none';
+      main.style.display = 'flex';
     }
-}
+  }
 
-let i = 3;
+  function showPledge() {
+    var z = document.querySelector('.pledge-selected');
+    if (z.style.display === 'none') {
+      z.style.display = 'flex';
+    } else {
+      z.style.display = 'none';
+    }
+  }
 
-slider.oninput = function() {
-    i = this.value;
-    document.querySelector("#valuePrice").innerText = valuePrice[i-1];
-    document.querySelector("#valueViews").innerText = valueViews[i-1];
-    i = this.value;
-    var color = 'linear-gradient(90deg, hsl(174, 86%, 45%)' + ((i * 25) - 25)  + '%, hsl(224, 65%, 95%) 1px';
-}
+  function showSuccess() {
+    var y = document.getElementById('success');
+    var x = document.querySelector('#modal');
+    if (y.style.display === 'none') {
+      y.style.display = 'block';
+      // x.style.display = 'none';
+    } else {
+      y.style.display = 'none';
+      x.style.display = 'block';
+    }
+  }
+
+  // function showSuccess() {
+  //   var y = document.getElementById('success');
+  //   var x = document.querySelector('#modal');
+  //   if (y.style.display === 'none') {
+  //     y.style.display = 'flex';
+  //     x.style.display ='none';
+  //   } else {
+  //     y.style.display = 'none';
+  //   }
+  // }
+
+  function goHome(){
+    var main =  document.querySelector('#main');
+    if (main.style.display = 'none'){
+      main.style.display = 'flex';
+    }
+  }
