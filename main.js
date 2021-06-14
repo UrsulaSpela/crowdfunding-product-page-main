@@ -1,6 +1,9 @@
+var x = document.querySelector('#modal');
+var y = document.querySelector('#main');
+var z = document.querySelector('.pledge-selected'); 
+var t = document.querySelector('#success')
+
 function showModal() {
-    var x = document.querySelector('#modal');
-    var main = document.querySelector('#main');
     if (x.style.display === 'none') {
       x.style.display = 'block';
       main.style.display = 'none';
@@ -11,7 +14,6 @@ function showModal() {
   }
 
   function showPledge() {
-    var z = document.querySelector('.pledge-selected');
     if (z.style.display === 'none') {
       z.style.display = 'flex';
     } else {
@@ -20,18 +22,25 @@ function showModal() {
   }
 
   function showSuccess() {
-    var y = document.getElementById('success');
-    var x = document.querySelector('#modal');
-    if (y.style.display === 'none') {
-      y.style.display = 'block';
-      // x.style.display = 'none';
-    } else {
+    if (t.style.display === 'none') {
+      t.style.display = 'all';
+      x.style.display = 'none';
       y.style.display = 'none';
+    } else {
+      t.style.display = 'none';
       x.style.display = 'block';
     }
   }
 
-  // function showSuccess() {
+  function goHome(){
+    if (y.style.display = 'none'){
+      y.style.display = 'flex';
+      x.style.display ="none";
+
+    }
+  }
+
+    // function showSuccess() {
   //   var y = document.getElementById('success');
   //   var x = document.querySelector('#modal');
   //   if (y.style.display === 'none') {
@@ -41,10 +50,3 @@ function showModal() {
   //     y.style.display = 'none';
   //   }
   // }
-
-  function goHome(){
-    var main =  document.querySelector('#main');
-    if (main.style.display = 'none'){
-      main.style.display = 'flex';
-    }
-  }
